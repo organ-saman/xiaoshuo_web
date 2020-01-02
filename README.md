@@ -28,3 +28,15 @@ npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+npm install
+
+npm run dev
+
+cnpm install element-ui --save
+
+cnpm install element-theme --save
+
+cnpm install element-theme-chalk -D
+
+cnpm install file-loader --save
