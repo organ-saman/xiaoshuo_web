@@ -19,7 +19,7 @@
       btnClick(value){
         if(value == 1){
           this.$router.push({
-            path: '../login',
+            path: 'login',
             data: {
               a: "测试传值"
             }

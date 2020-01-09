@@ -8,8 +8,8 @@ import ElementUi from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUi)
 
-// import VueResource from 'vue-resource';
-// Vue.use(VueResource)
+import VueResource from 'vue-resource';
+Vue.use(VueResource)
 
 Vue.config.productionTip = false
 

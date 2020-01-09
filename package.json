@@ -21,6 +21,7 @@
     "file-loader": "^1.1.11",
     "mint-ui": "^2.2.13",
     "vue": "^2.5.2",
+    "vue-resource": "^1.5.1",
     "vue-router": "^3.0.1",
     "webpack-merge": "^4.2.2"
   },

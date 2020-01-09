@@ -1,28 +1,33 @@
 <template>
   <div class="login">
-    <h2>sdfh</h2>
-    <!--<el-form :model="formData" :rules="rules" ref="formData">-->
-      <!--<div class="margin-left-3">-->
+    <el-form :model="loginForm" :rules="rules" ref="loginForm">
+      <div class="margin-left-3">
 
-        <!--<el-row style="padding-top: 15px">-->
-          <!--<el-col :span="6">-->
-            <!--<el-form-item label="用户名：" prop="userName">-->
-              <!--<el-input v-model="formData.userName"></el-input>-->
-            <!--</el-form-item>-->
-          <!--</el-col>-->
+        <el-row style="padding-top: 15px">
+          <el-col :span="6">
+            <el-form-item label="用户名：" prop="userName">
+              <el-input v-model="loginForm.userName"></el-input>
+            </el-form-item>
+          </el-col>
+        </el-row>
+        <el-row style="padding-top: 15px">
+          <el-col :span="6">
+            <el-form-item label="密码：" prop="passWord">
+              <el-input type="password" v-model="loginForm.passWord"></el-input>
+            </el-form-item>
+          </el-col>
+        </el-row>
 
-          <!--<el-col :span="6">-->
-            <!--<el-form-item label="密码：" prop="passWord">-->
-              <!--<el-input v-model="formData.passWord"></el-input>-->
-            <!--</el-form-item>-->
-          <!--</el-col>-->
+      </div>
+    </el-form>
 
-        <!--</el-row>-->
+    <el-row>
+      <el-col :span="6">
+        <el-button type="primary" @click="login">登录</el-button>
+        <el-button type="primary" @click="">注册</el-button>
+      </el-col>
+    </el-row>
 
-      <!--</div>-->
-    <!--</el-form>-->
-
-    <el-button type="primary" @click="login"></el-button>
 
 
   </div>
@@ -35,7 +40,7 @@
     components: {},
     data () {
       return {
-        formData:{
+        loginForm:{
           userName:'',
           passWord:''
         },
@@ -46,6 +51,7 @@
     },
     methods: {
       login(){
+        console.log("login:");
         let form = {
           userName:this.loginForm.username,
           passWord:this.loginForm.password,
